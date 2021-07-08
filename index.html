@@ -96,7 +96,8 @@ html {
 	font: 1em Georgia, serif;
 }
 body {
-	width: 999999px;
+	width: px;
+        height: 9800px;
 	margin: auto;
 	max-width: 100%;
 	display: flex;
@@ -104,7 +105,6 @@ body {
 .avatar {
 	background: #000000;
 }
-.avatar,
 .avatar > img {
 	border-radius: .3em .3em 0 0;
 	height: 290px;
@@ -118,8 +118,9 @@ body {
 .sidebar {
 	background: #000000;
 	width: 290px;
-	border: .1em solid var(--sidebar-border);
-	border-radius: .3em;
+	border: .5em solid var(--sidebar-border);
+	border-radius: .0em;
+        border-color: #ffffff;
 }
 .sidebar p,
 .sidebar h1 {
@@ -190,9 +191,6 @@ main {
 	display: inline-block;
 	padding: 1em;
 }
-main header {
-	font-family: Arial, sans-serif;
-}
 main p {
 	hyphens: auto;
 	text-align: justify;
@@ -226,15 +224,7 @@ summary:hover, main a:hover {
 	color: var(--a-hover);
 	text-decoration: none;
 }
-kbd {
-	quotes: "`" "`";
-}
-kbd::before {
-	content: open-quote;
-}
-kbd::after {
-	content: close-quote;
-}
+
 .sidebar a:not(.nolink) {
 	color: var(--fg);
 	text-decoration: underline;
@@ -243,10 +233,6 @@ kbd::after {
 .sidebar a:hover {
 	color: var(--fg);
 	text-decoration: none;
-}
-summary {
-	cursor: pointer;
-	display: block;
 }
 table {
 	border: .1em solid var(--table-border);
