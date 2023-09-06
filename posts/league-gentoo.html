@@ -39,9 +39,8 @@
          </ul>
          Update the system with <code>emerge -auvDN @world</code> and solve any dependency problems that portage could complain. Depending on your profile or current configuration, recompiling the above packages to enable 32bit support for them can make portage pull more packages needing the <code>abi_x86_32</code> flags, that should be added in the user's <code>/etc/portage/package.use</code> file as well. For example, package <code>foo/bar</code> needs to be recompiled with <code>abi_x86_32</code> to make some game work, but it also needs <code>some/thing abi_x86_32</code> in order to properly run <code>foo/bar</code>.
          <p>After recompiling everything with <code>emerge -auvDN @world</code>, League should run fine via Lutris. Note that I was having some launch problems on it because the installer script on Lutris website was broken for the pt_BR language, and installing League on english made everything work fine. You can always troubleshoot Lutris via running it on the terminal with <code>lutris -d</code> and checking for some errors or missing packages. A quick reminder too that you don't need to install Wine in order to run League or anything on Lutris, even if it complains about missing Wine packages. Installing multilib packages for vulkan drivers and some other packages are enough.
-      </div>
       <p>
       <hr>
       This web page is distributed in the hope that it will be useful, but WITHOUT ANY WARRANTY; without even the implied warranty of MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE. See the GNU General Public License for more details.
       You should have received a copy of the GNU General Public License along with this code. If not, see <a href="https://www.gnu.org/licenses">https://www.gnu.org/licenses</a>
-      <p>
+      <p></div>
