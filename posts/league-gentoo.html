@@ -1,25 +1,47 @@
 <!DOCTYPE HTML>
 <html>
-	<head>
-		<meta charset='utf-8'>
-		<meta name='color-scheme' content='light dark'>
-		<title>Bear's Cave</title>
-	</head>
-	<body>
-		<br><a href="https://euroblitz.github.io/">< Back to Home</a></br>
-		<h3>A quick guide of how to run League of Legends on Gentoo</h3>
-		<p>For this method you'll need to install <a href="https://wiki.gentoo.org/wiki/Lutris">Lutris</a>, either via portage with <code>emerge --ask games-util/lutris</code> (recommended) or via <a href="https://flathub.org/apps/net.lutris.Lutris">flatpak</a> package. I often get in trouble while trying to run flatpak games on Linux, either on Steam or Lutris but there was probably something I was missing and didn't want to deal with at the time, but it's totally doable if you want to avoid compiling a bunch of multilib dependencies. Note that some multilib dependencies are required to run most Windows games on Lutris, and that also applies for League of Legends. Some users explicitly enable the <code>ABI_X86="32 64"</code> in their <code>make.conf</code> file, and that recompiles all available packages to work with 32bit multilib, increasing binary size and compiling time. I never needed to do this because either portage tells you what you need or you figure it out through Lutris or Wine logs.
-		<p>In order to make sure that everything works as expected, the following packages should be added into the user's <code>/etc/portage/package.use</code> file:
-		<ul>
-			<li><code>media-libs/vulkan-loader abi_x86_32</code></li>
-			<li><code>media-libs/vulkan-layers abi_x86_32</code></li>
-			<li><code>media-libs/freetype abi_x86_32</code></li>
-			<li><code>media-libs/libpng abi_x86_32</code></li>
-			<li><code>net-libs/gnutls abi_x86_32</code></li>
-			<li><code>media-libs/libsdl2 abi_x86_32</code></li>
-		</ul>
-		Update the system with <code>emerge -auvDN @world</code> and solve any dependency problems that portage could complain. Depending on your profile or current configuration, recompiling the above packages to enable 32bit support for them can make portage pull more packages needing the <code>abi_x86_32</code> flags, that should be added in the user's <code>/etc/portage/package.use</code> file as well. For example, package <code>foo/bar</code> needs to be recompiled with <code>abi_x86_32</code> to make some game work, but it also needs <code>some/thing abi_x86_32</code> in order to properly run <code>foo/bar</code>.
-		<p>After recompiling everything with <code>emerge -auvDN @world</code>, League should run fine via Lutris. Note that I was having some launch problems on it because the installer script on Lutris website was broken for the pt_BR language, and installing League on english made everything work fine. You can always troubleshoot Lutris via running it on the terminal with <code>lutris -d</code> and checking for some errors or missing packages. A quick reminder too that you don't need to install Wine in order to run League or anything on Lutris, even if it complains about missing Wine packages. Installing multilib packages for vulkan drivers and some other packages are enough.
-		<hr>
-		This web page is distributed in the hope that it will be useful, but WITHOUT ANY WARRANTY; without even the implied warranty of MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE. See the GNU General Public License for more details.
-		You should have received a copy of the GNU General Public License along with this code. If not, see <a href="https://www.gnu.org/licenses">https://www.gnu.org/licenses</a>
+   <head>
+      <style>
+         body {
+         margin: 0 auto;
+         max-width: 40em;
+         font-family: "Helvetica", "Arial", sans-serif;
+         background-image: url("https://euroblitz.github.io/img/background.png");
+         background-repeat: repeat;
+         background-size: 20%;
+         }
+         div {
+         text-align: justify;
+         text-justify: inter-word;
+         }
+         img {
+         float: left;
+         padding-right: 15px;
+         }
+      </style>
+      <meta charset='utf-8'>
+      <meta name='color-scheme' content='light dark'>
+      <title>Bear's Cave</title>
+   </head>
+   <body>
+      <br><a href="https://euroblitz.github.io/">< Back to Home</a></br>
+      <div>
+         <h3>A quick guide of how to run League of Legends on Gentoo</h3>
+         <p>For this method you'll need to install <a href="https://wiki.gentoo.org/wiki/Lutris">Lutris</a>, either via portage with <code>emerge --ask games-util/lutris</code> (recommended) or via <a href="https://flathub.org/apps/net.lutris.Lutris">flatpak</a> package. I often get in trouble while trying to run flatpak games on Linux, either on Steam or Lutris but there was probably something I was missing and didn't want to deal with at the time, but it's totally doable if you want to avoid compiling a bunch of multilib dependencies. Note that some multilib dependencies are required to run most Windows games on Lutris, and that also applies for League of Legends. Some users explicitly enable the <code>ABI_X86="32 64"</code> in their <code>make.conf</code> file, and that recompiles all available packages to work with 32bit multilib, increasing binary size and compiling time. I never needed to do this because either portage tells you what you need or you figure it out through Lutris or Wine logs.
+         <p>In order to make sure that everything works as expected, the following packages should be added into the user's <code>/etc/portage/package.use</code> file:
+         <ul>
+            <li><code>media-libs/vulkan-loader abi_x86_32</code></li>
+            <li><code>media-libs/vulkan-layers abi_x86_32</code></li>
+            <li><code>media-libs/freetype abi_x86_32</code></li>
+            <li><code>media-libs/libpng abi_x86_32</code></li>
+            <li><code>net-libs/gnutls abi_x86_32</code></li>
+            <li><code>media-libs/libsdl2 abi_x86_32</code></li>
+         </ul>
+         Update the system with <code>emerge -auvDN @world</code> and solve any dependency problems that portage could complain. Depending on your profile or current configuration, recompiling the above packages to enable 32bit support for them can make portage pull more packages needing the <code>abi_x86_32</code> flags, that should be added in the user's <code>/etc/portage/package.use</code> file as well. For example, package <code>foo/bar</code> needs to be recompiled with <code>abi_x86_32</code> to make some game work, but it also needs <code>some/thing abi_x86_32</code> in order to properly run <code>foo/bar</code>.
+         <p>After recompiling everything with <code>emerge -auvDN @world</code>, League should run fine via Lutris. Note that I was having some launch problems on it because the installer script on Lutris website was broken for the pt_BR language, and installing League on english made everything work fine. You can always troubleshoot Lutris via running it on the terminal with <code>lutris -d</code> and checking for some errors or missing packages. A quick reminder too that you don't need to install Wine in order to run League or anything on Lutris, even if it complains about missing Wine packages. Installing multilib packages for vulkan drivers and some other packages are enough.
+      </div>
+      <p>
+      <hr>
+      This web page is distributed in the hope that it will be useful, but WITHOUT ANY WARRANTY; without even the implied warranty of MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE. See the GNU General Public License for more details.
+      You should have received a copy of the GNU General Public License along with this code. If not, see <a href="https://www.gnu.org/licenses">https://www.gnu.org/licenses</a>
+      <p>
