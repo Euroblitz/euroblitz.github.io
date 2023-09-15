@@ -1,5 +1,5 @@
 # euroblitz.github.io
 
 <article>
-	<p>my personal webpage, made entirely in HTML
+	<p>My personal webpage, made entirely in HTML and simple CSS formatting
 </article>
