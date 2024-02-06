@@ -9,7 +9,7 @@
    </head>
    <body>
       <br><a href="https://euroblitz.github.io/">< Back to Home</a></br>
-      <br><a href="https://euroblitz.github.io/posts.html">< Back to Posts page</a></br>
+          <a href="https://euroblitz.github.io/posts.html">< Back to Posts page</a></br>
       <div>
          <h3>A quick guide of how to run League of Legends on Gentoo</h3>
          <p>For this method you'll need to install <a href="https://wiki.gentoo.org/wiki/Lutris">Lutris</a>, either via portage with <code>emerge --ask games-util/lutris</code> (recommended) or via <a href="https://flathub.org/apps/net.lutris.Lutris">flatpak</a> package. I often get in trouble while trying to run flatpak games on Linux, either on Steam or Lutris but there was probably something I was missing and didn't want to deal with at the time, but it's totally doable if you want to avoid compiling a bunch of multilib dependencies. Note that some multilib dependencies are required to run most Windows games on Lutris, and that also applies for League of Legends. Some users explicitly enable the <code>ABI_X86="32 64"</code> in their <code>make.conf</code> file, and that recompiles all available packages to work with 32bit multilib, increasing binary size and compiling time. I never needed to do this because either portage tells you what you need or you figure it out through Lutris or Wine logs.
