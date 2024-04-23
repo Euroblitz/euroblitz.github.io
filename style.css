@@ -1,28 +1,46 @@
+/* light mode body */
 body {
-     padding-left: 15px;
-     padding-right: 15px;
-     margin: 0 auto;
-     max-width: 35em;
-     font-family: "Helvetica", "Arial", sans-serif;
-     background-image: url("https://euroblitz.github.io/img/background.png");
-     background-repeat: repeat;
-     background-size: 20%;
-     color: white;
+	margin: 0 auto;
+	max-width: 35em;
+	font-family: "Helvetica", "Arial", sans-serif;
+	background-image: url("https://euroblitz.github.io/img/background-light.png");
+	background-repeat: repeat;
+	background-size: 20%;
+	color: black;
 }
- div {
-     text-align: justify;
-     text-justify: inter-word;
+
+/* dark mode body */
+@media (prefers-color-scheme: dark) {
+	body {
+		margin: 0 auto;
+		max-width: 35em;
+		font-family: "Helvetica", "Arial", sans-serif;
+		background-image: url("https://euroblitz.github.io/img/background.png");
+		background-repeat: repeat;
+		background-size: 20%;
+		color: white;
+	}
 }
- img {
-     float: left;
-     padding-right: 15px;
+
+/* custom link colors */
+	a:link {
+	color: #618ded;
 }
- a:link {
-     color: #618ded;
+	a:hover {
+	color: #9dbafa;
 }
- a:hover {
-     color: #9dbafa;
+	a:visited {
+	color: #9a7fc9;
 }
- a:visited {
-     color: #9a7fc9;
+
+/* text justify */
+div {
+	text-align: justify;
+	text-justify: inter-word;
+}
+
+/* align image with the text */
+img {
+	float: left;
+	padding-right: 20px;
 }
