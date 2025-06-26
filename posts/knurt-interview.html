@@ -1,0 +1,165 @@
+<!DOCTYPE HTML>
+<html>
+   <head>
+      <meta charset='utf-8'>
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <meta name='color-scheme' content='light dark'>
+      <title>Bear's Cave - League of Legends on Gentoo</title>
+<style>
+         body {
+         margin: 0 auto;
+         max-width: 40em;
+         font-family: "Helvetica", "Arial", sans-serif;
+         background-image: url("https://euroblitz.github.io/img/background.png");
+         background-repeat: repeat;
+         background-size: 20%;
+         color: white;
+         }
+         /* text justify */
+         div {
+         text-align: justify;
+         text-justify: inter-word;
+         }
+         /* mobile view */
+         .container {
+         margin: 16px auto;
+         padding: 0 16px;
+         }
+         /* custom link colors */
+         a:link {
+         color: #618ded;
+         }
+         a:hover {
+         color: #9dbafa;
+         }
+         a:visited {
+         color: #9a7fc9;
+         }
+         /* image float */
+         .figure {
+         float: left;
+         padding-top: 5px;
+         padding-right: 20px;
+         }
+         .badge {
+         float: right;
+         padding-left: 20px;
+         }
+</style>
+   </head>
+   <body>
+
+   <div class="container">
+      <br><a href="https://euroblitz.github.io/">< Back to Home</a></br>
+      <a href="https://euroblitz.github.io/posts.html">< Back to Posts page</a></br>
+      <div>
+         <h3>Interview with Knurt, the flying saucer mascot from Gentoo!</h3>
+</code>
+<img src="https://img.vivaolinux.com.br/imagens/artigos/comunidade/knurt.JPG" class="figure" width="128">
+<p>After Larry the cow, it's now Knurt, the flying saucer's turn to talk a little about the Gentoo Linux distribution. In this interview (yet another one) given exclusively to Viva o Linux, Knurt reveals curiosities and details about the most advanced distro in the world! This whole interview belongs to Viva o Linux website and it was translated by me.</p>
+
+<p><strong><font color="#F2F2B8">Xerxes:</font></strong> Knurt, I heard that you consider Gentoo to be the most advanced distribution in the world. Why?</p>
+
+<p><strong><font color="#b2a0e5">Knurt:</font></strong> In the Gentoo world, things happen differently than in most. There is no expectation of a new version every six months, because your system will always be kept up to date, with the latest versions of applications downloaded directly from their respective official websites and compiled specifically for YOUR hardware, enabling the best possible system performance. This power, this flexibility, is not found in many distributions.</p>
+
+<p><strong><font color="#F2F2B8">Xerxes:</font></strong> What distros, besides Gentoo, allow this flexibility?</p>
+
+<p><strong><font color="#b2a0e5">Knurt:</font></strong> I can name Lunar, Source Mage and Sorcerer, there's Slackware too, but there are others. However, none of them have Gentoo's powerful Portage tool.</p>
+
+<p><strong><font color="#F2F2B8">Xerxes:</font></strong> For the readers of the interview, could you tell us a little about Portage?</p>
+
+<p><cite><font color="#FFA2A4">At this point Knurt changed color. He alternated between green and red for a few seconds, as he was searching for data in his electronic brain. Then he said:</font></cite></p>
+
+<p><strong><font color="#b2a0e5">Knurt:</font></strong> Portage is the heart of Gentoo Linux, and it has many functions. For example, to get the latest Gentoo Linux software you type the command: "emerge --sync". This command tells Portage to update your local tree via the Internet. The local Portage tree contains a complete collection of scripts that can be used by Portage to create and install the latest Gentoo packages.</p>
+
+<p>Portage is also a package building and installation system. When you want to install a package, you type "emerge packagename" and Portage automatically builds a customized version of the package according to your exact specifications, optimizing it for your hardware and checking which optional features of the package you want enabled or disabled.</p>
+
+<p>Portage also keeps your system up to date. Typing "emerge -u world" will ensure that all the packages you want on your system are updated automatically.</p>
+
+<p><strong><font color="#F2F2B8">Xerxes:</font></strong> It sounds easy to use Portage, but in practice I know it's not that simple. As soon as the user starts using it, they quickly comes across several error messages and information about conflicting or masked packages, overlays and updates...</p>
+
+<p><strong><font color="#b2a0e5">Knurt:</font></strong> I didn't say it was easy, I said it was flexible. No wonder you noob use Slackware! Ha ha ha!</p>
+
+<p><strong><font color="#F2F2B8">Xerxes:</font></strong> *Yeah*... (embarrassedly leafing through some interview papers). Erm... could you summarize the history of Gentoo?</p>
+
+<p><cite><font color="#FFA2A4">Again Knurt alternates between green and red for a few seconds and says:</font></cite></p>
+
+<p><strong><font color="#b2a0e5">Knurt:</font></strong> It all started with plenty of time. Time to discover, time to experiment. That's how Gentoo creator Daniel Robbins got into Linux. He started with Debian Linux, set up some applications, learned the ropes of Linux like most Linux users, tried out a few distributions and started helping out with a distribution called Stampede Linux. Soon he was working on the development of Stampede and its package management system. After a while and due to some problems, he decided to create his own distribution.</p>
+
+<p>And so Enoch was born. Daniel wanted Enoch to be an incredibly fast distribution with the ability to fully automate the package creation and update process. Soon there was a #enoch on irc.freenode.net and 10 developers helping out with the distribution.</p>
+
+<p>After a while, as Enoch started to improve, they felt it needed a new name. They called it Gentoo Linux.</p>
+
+<p>Around the time Gentoo was approaching its 1.0 release, Daniel bought a new, faster machine. The motherboard model had a faulty chip that caused Linux to crash when idle, and as a result, Linux development came to a complete standstill.</p>
+
+<p>Since there was nothing happening with Gentoo, Daniel switched to FreeBSD. He liked what he saw. Especially the "Ports" system. And then he returned to the Linux world. With the help of developers like Achim Gottinger, Gentoo was back and growing.</p>
+
+<p>The package management system was completely redesigned and named Portage. Gentoo has been in active development ever since, with tons of features being continually added over the years. Teams of volunteers help keep Gentoo up-to-date and patched to ensure the best security and stability.</p>
+
+<p>Gentoo's development model has been extended to a whole project-based method, where each project develops independently but cooperates with other Gentoo projects.</p>
+
+<p>Regular meetings between project leaders (called "project managers") keep development moving at a fast pace. The Gentoo Foundation was created to take care of finances, legal protection and to control the overall development of Gentoo to keep it in line with the social contract.</p>
+
+<p>In April 2004 Daniel decided to step down from his responsibilities as a Gentoo developer. We are all very grateful for all the work Daniel has put into Gentoo and wish him the best.</p>
+
+<p>Gentoo continues to grow, evolve and improve - new projects are added, new developers join the team, new packages are added every day. The community of developers and users is without a doubt Gentoo's greatest asset and...</p>
+
+<p><strong><font color="#F2F2B8">Xerxes:</font></strong> ZzzZ zZ...</p>
+
+<p><cite><font color="#FFA2A4">At that moment an electric bolt came out of Knurt's antenna and hit me, making me jump out of my chair!</cite></font></p>
+
+<p><strong><font color="#F2F2B8">Xerxes:</font></strong> Er... sorry! *sitting down* Larry the cow talked about the meaning of the name Gentoo in a previous interview. However, I forgot to ask her about the origin of the Gentoo logo. Do you have any information about it?</p>
+
+<p><strong><font color="#b2a0e5">Knurt:</font></strong> Affirmative. The Gentoo logo is a G that resembles a magatama.</p>
+
+<p><center><img src="https://i.ibb.co/sp4gnd7p/gentoo.png" width="256"></img></center></p>
+
+<p><strong><font color="#F2F2B8">Xerxes:</font></strong> Magatama? Tell us more about it.</p>
+
+<p><strong><font color="#b2a0e5">Knurt:</font></strong> Magatamas are objects with holes and a peculiar shape that are used for decoration. They first appeared in Japan around 8,000 years B.C.</p>
+
+<p><center><img src="https://img.vivaolinux.com.br/imagens/artigos/comunidade/tamas.JPG" width="256"></img></center></p>
+
+<p><strong><font color="#F2F2B8">Xerxes:</font></strong> Hmmm. I knew I'd seen that somewhere before... I think it was when I saw the trailer for that Xuxa movie... The Mystery of the Little Nun, or something like that.</p>
+
+<p><strong><font color="#b2a0e5">Knurt:</font></strong> Correction, it's The Mystery of the Little Nun. And any similarity to the Xuxa Productions logo is purely coincidental!</p>
+
+<p><center><img src="https://i.ibb.co/bg565W46/xuxa.png" width="256"></img></center></p>
+
+<p><small><center>Xuxa Produções logo with a P in the middle that resembles the inverted "Gentoo logo"</center></small></p>
+
+<p><strong><font color="#F2F2B8">Xerxes:</font></strong> Gentoo has two mascots: you and Larry, the cow. Which of you are the official one?</p>
+
+<p><strong><font color="#b2a0e5">Knurt:</font></strong> The official mascot is me, Knurt, the flying saucer. Larry came along as an unofficial mascot and became more popular than me due to his charisma. We can consider my friend Larry as an official mascot too.</p>
+
+<p><strong><font color="#F2F2B8">Xerxes:</font></strong> A curiosity: There is a lot of discussion about Larry's gender. If you are friends with them, you probably know. After all, is Larry male or female?</p>
+
+<p><strong><font color="#b2a0e5">Knurt:</font></strong> I don't have enough data to answer this question exactly, but my AI allows me to draw some conclusions. This question arose because Larry is short for Lawrence, a masculine name in the US, and COW, depending on the context, can refer to either genders of the animals. That's why some argue that Larry is a male.</p>
+
+<p>However, the fact that Larry has breasts indicates that she is female... Unless, of course, Larry has had breast implants. Until it is proven that she has had implants, I will treat Larry as female. Or a canonically trans cow! Who knows?</p>
+
+<p>Others even treated Larry's gender as a bug and reported it to the official website as can be seen in this link: <a href="https://bugs.gentoo.org/27727">Larry can NOT be a Cow</a>.</p>
+
+<p>Others still mock poor Larry on sites like <a href="https://desciclo.pedia.ws/wiki/Larry_The_Cow">Desciclopedia</a>.</p>
+
+<p>In any case, Larry is a beloved mascot and has many fans. In fact, among Larry the Cow's biggest fans is Viva o Linux's albfneto, who once said: "I know Larry the Cow! I like him a lot, I'm a huge fan of Larry the Cow!".</p>
+
+<p><strong><font color="#F2F2B8">Xerxes:</font></strong> The biggest initial obstacle for users who decide to explore the Gentoo world is perhaps the slow and laborious installation process of the distribution. Could you provide some tips to make life easier for these users?</p>
+
+<p><strong><font color="#b2a0e5">Knurt:</font></strong> Of course. There is a detailed installation manual in several languages, including Portuguese. Following this manual is the best way to install Gentoo. After booting from the live CD, it is recommended that the user open another terminal (Ctrl + Alt + F2) and browse the official website using the Links text browser. Or as today, use any other live CD from any Linux distro such as Ubuntu so it make things easier to browse the web, files and the online handbook.</p>
+
+<p> You can check the official Gentoo Handbook <a href="https://wiki.gentoo.org/wiki/Handbook:Main_Page">right here</a>.</p>
+
+<p><strong><font color="#F2F2B8">Xerxes:</font></strong> Knurt, thanks for your time and patience. All the Linux community is grateful for you kindly giving this interview!</p>
+
+<p><strong><font color="#b2a0e5">Knurt:</font></strong> I thank Viva o Linux Forum for the opportunity to promote Gentoo Linux among Brazilian users.</p>
+
+<p><strong><font color="#F2F2B8">Xerxes:</font></strong> Oh! I almost forgot... Any final words for those who want to venture into Gentoo for the first time?</p>
+
+<p><strong><font color="#b2a0e5">Knurt:</font></strong> Well, as the Japanese say, instead of "good luck"... Ganbatte Kudasai! (that is: try hard!)</p>
+
+<p><strong>Source:</strong> <a href=""https://www.vivaolinux.com.br/artigo/Entrevista-com-Knurt-o-pires-voador">https://www.vivaolinux.com.br/artigo/Entrevista-com-Knurt-o-pires-voador</a>
+            <hr>
+            Copyright 2024 Euroblitz Released under the Creative Commons Attribution Noderivatives 3.0 license
+            <p>
+      </div>
