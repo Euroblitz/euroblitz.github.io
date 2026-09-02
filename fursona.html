@@ -1,4 +1,3 @@
-
 <!DOCTYPE html>
 <html lang="pt-BR">
 <head>
@@ -6,59 +5,47 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>Euroblitz Fursona</title>
 </head>
-<style>
-    *, *::before, *::after {
-  box-sizing: border-box;
-  margin: 0;
-  padding: 0;
-}
 
+<style>
 html, body {
   width: 100%;
-  overflow-x: hidden; /* Prevent horizontal layout breaking/scrolling */
+  overflow-x: hidden;
 }
+
 body {
-    background: #222;
-    color: #eee;
-    font-family: Helvetica;
-    max-width: 700px;
-    margin: auto;
-    padding: 26px;
-    padding-top: 0px;
+  margin: 0;
+  min-height: 100vh;
+  display: grid;
+  place-items: center;
+  font-family: "Roboto";
+  background-color: #eeeeee;
+  color: #202020;
 }
-main {
-    padding-top: 0px;
-    text-align: justify;
+
+.container {
+  max-width: 600px;
+  width: 100%;
+  text-align: justify;
+  text-justify: inter-word;
 }
+
 img {
-    max-width: 100%;
+  max-width: 100%;
+  height: auto;
 }
-h1 {
-    border-bottom: 1px solid #666;
-    margin-bottom: 5px;
+.imgborder {
+  border: 3px solid #000000;
 }
-h2 {
-    border-bottom: 1px solid #666;
-    padding-bottom: 5px;
-}
-p, li {
-    line-height: 1.6;
-}
-.float {
-    float: right;
-    height: 300px;
-    margin: 6px 0 10px 20px;
-}
-.floppa {
-    float: right;
-    height: 100px;
-    margin: 0px 0px 0px 15px;
+p {
+  line-height: 1.8;
+  font-size: 16px;
+
+
 }
          .image-grid {
-         /* image grid gallery */
          display: grid;
-         grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
-         gap: 5px; }
+         grid-template-columns: repeat(auto-fill, minmax(128px, 1fr));
+         gap: 2px; }
          .image-item {
          position: relative;
          overflow: hidden;
@@ -71,52 +58,39 @@ p, li {
          left: 0;
          width: 100%;
          height: 100%;
-         /* crops image to fit 1:1 */ 
          object-fit: cover; }
 </style>
 
+<main class="container">
 
-<body>
-<main>
 
-<h1>Fursona</h1>
-<p><img src="https://i.ibb.co/FLrzp4yX/ai.png"></img></p>
-<img class="float" src="https://i.ibb.co/v6vZWDCw/fur.png" alt="Meu fursona">
-
-<p>É aqui que guardo todos os desenhos do meu fursona, de presentes, commissions, aparições, até ref sheet e tudo mais. E tudo que não caberia em uma badge também. O Euro é uma criação minha, então obviamente peço pra não usar ele sem a minha permissão, mas pode ficar a vontade pra fazer desenho, <s>apertar</s> e essas coisas. Alguém já se apropriou dele uma vez, fez um perfil falso e se passou por mim por um bom tempo falando com gente que eu não conhecia. Ele é bastante querido pra mim, e considero ele como uma extensão minha.</p>
+<h2>Meu fursona</h2>
+<img src="https://gcdnb.pbrd.co/images/QC9Wz1ncpyQK.png"></img>
+<p>É aqui que guardo todos os desenhos do meu fursona, de presentes, commissions, aparições, até ref sheet e tudo mais. E tudo que não caberia em uma badge também. O Euro é uma criação minha, então obviamente peço pra não usar ele sem a minha permissão, mas pode ficar a vontade pra fazer desenho, apertar e essas coisas. Alguém já se apropriou dele uma vez, fez um perfil falso e se passou por mim por um bom tempo falando com gente que eu não conhecia. Ele é bastante querido pra mim, e considero ele como uma extensão minha.</p>
 <p>E se você me encontrou por aí e escaneou o código QR na minha badge, eu não mordo, só sou um pouquinho introvertido, mas amo conhecer gente nova!</p>
 
-
-
-<img src="https://raw.githubusercontent.com/Euroblitz/euroblitz.github.io/main/img/fursona-gallery/ref-capycorn_.jpg"></img>
-<figcaption>Minha ref sheet mais recente feita pela <a href="https://bsky.app/profile/capycorn.bsky.social">@capycorn</a></figcaption>
-
+<img src="https://raw.githubusercontent.com/Euroblitz/euroblitz.github.io/main/img/fursona-gallery/ref-capycorn_.jpg" class="imgborder"></img>
+Minha ref sheet mais recente feita pela <a href="https://bsky.app/profile/capycorn.bsky.social">@capycorn</a>
 
 <p>E se também temos algum assunto a tratar, seja não resolvido, mal resolvido, mal entendidos, retratações, dívidas, contas para pagar, carnês, prazos ou qualquer coisa do tipo, eu dou satisfação, só me chamar pra uma conversa.</p>
 
-
 <p><i>E sim, eu bem que poderia fazer algo bonitinho, com animação, efeito de pirocas voadoras em JavaScript, purpurina, bem gay, BEM VIADO MESMO... e tudo mais, só que eu tenho PAVOR de JS e prefiro os meus sites assim simplezinhos, só com o básico de CSS pra formatação como se fosse um documento de texto mesmo. Até pq o 4G tá caro e com menos coisa pra carregar o seu plano agradece. E tem muita coisa que a internet não precisa pra funcionar direito...</i></p>
-
 
 <h2>Aparência</h2>
 <p>No geral, o Euro é um urso cinzento de pelagem roxa, com tons mais claros de roxo e rosa. Corpo gordinho e baixo, geralmente usando uma camisa simples por baixo e uma jaqueta de couro preta por cima semi-aberta. De acessório só um óculos de grau, e piercings mais escondidos por baixo da camisa, nos mamilos. Tem chifres e uma cicatriz no olho esquerdo, e esse mesmo olho é cego e de um tom azul mais clarinho.</p>
-<p>O Euro também é originalmente mudo, e só consegue se comunicar por sons, gestos e grunhidos na maioria das situações, apesar de entender muito bem seres humanos e ser o urso mais empático que você vai conhecer por aí. Tem lore, mas é bobinha e escrevi quando eu tinha uns 17 anos pra mais.
+
+<p>O Euro também é originalmente mudo, e só consegue se comunicar por sons, gestos e grunhidos na maioria das situações, apesar de entender muito bem seres humanos e ser o urso mais empático que você vai conhecer por aí. Tem lore, mas é bobinha e escrevi quando eu tinha uns 17 anos pra mais.</p>
 
 <h2>Gosto de</h2>
 <p>Músca · Daft Punk · French House · Vaporwave · Death's Dynamic Shroud · Justice · Tecnologia · Informática · Linux · Software Livre · Programação · Paisagens · Caminhadas · Beber · Comer pra CARALHO · Cidade grande · Fazer novas amizades · Rodinho de pia · Conversar · Fallout · RuneScape · League of Legends · Praia · Shoppings · Chubby · Abraços · Carinho · RPG · Final Fantasy XIV · One Piece · American Horror Story · The Office · Hunter x Hunter · Dead by Daylight · Gatos · Cachorros · Dragões</p>
 
-<h2>Não gosto muito de</h2>
+<h2>Não curto muito</h2>
 <p><b>Berinjela</b> - Apesar de ter comido uma caponata de berinjela uma vez e não ter odiado, acho que é a única comida que eu não gosto e não suporto cheiro nem textura, já tentamos empanar, fazer lasanha, fritar, ensopar, salada... Mas não desce até hoje.</p>
-
-<p><b> Microsoft</b> - Microslop, o resto não cabe aqui.</p>
-
-<p><b>Gente que me manda "bom dia", e espera 3 horas pra eu responder e depois mandar mensagem sobre o que quer</b> - Eu sou bem direto nas minhas mensagens pessoais e principalmente no trabalho, e desde sempre isso me incomodou, acho até engraçado deixar a pessoa lá mofando com o "oi" dela até ela me perguntar o que quer. Como eu disse, eu não mordo, só chega e pergunta. Inclusive, <a href="https://nohello.net/en/">tem um artigo interessante falando sobre isso.</a></p>
-
-
-<p><img class="floppa" src="https://i.ytimg.com/vi/UY6pcavuKz8/sddefault.jpg"></img><b>Floppas (Caracais)</b> - Acho que nao tem um vídeo, NAO TEM UM UNICO VÍDEO QUE ESSE BICHO N TA BRAVO ELE ODEIA HUMANOS NAO É POSSIVEL QUE UM DIABO DESSE GOSTE DE GENTE E EU TBM N GOSTO DELE acho engraçadinho mas ele é mt idiota e burro. Talvez pelo fato desse bicho não servir pra ser domesticado igual um gato normal e mesmo assim continuam insistindo com um bicho selvagem dentro de casa. ASSIM COMO QUEM LEVA UMA PORRA DESSAS PRA DENTRO DE CASA TAMBÉM É MALUCO VAI SE FUDER PELO AMOR DE DEUS.</p>
-
-
-<p><h2>Galeria de arte</h2>
+<p><b>Microsoft</b> - Microslop, o resto não cabe aqui.</p>
+<p><b>Gente que me manda "bom dia", e espera 3 horas pra eu responder e depois mandar mensagem sobre o que quer</b> - Eu sou bem direto nas minhas mensagens pessoais e principalmente no trabalho, e desde sempre isso me incomodou, acho até engraçado deixar a pessoa lá mofando com o "oi" dela até ela me perguntar o que quer. Como eu disse, eu não mordo, só chega e pergunta. Inclusive <a href="https://nohello.net/en/">tem um artigo interessante falando sobre isso.</a></p>
+<p><b>Floppas (Caracais)</b> - Acho que nao tem um vídeo, NAO TEM UM UNICO VÍDEO QUE ESSE BICHO N TA BRAVO ELE ODEIA HUMANOS NAO É POSSIVEL QUE UM DIABO DESSE GOSTE DE GENTE E EU TBM N GOSTO DELE acho engraçadinho mas ele é mt idiota e burro. Talvez pelo fato desse bicho não servir pra ser domesticado igual um gato normal e mesmo assim continuam insistindo com um bicho selvagem dentro de casa. ASSIM COMO QUEM LEVA UMA PORRA DESSAS PRA DENTRO DE CASA TAMBÉM É MALUCO VAI SE FUDER PELO AMOR DE DEUS.</p>
+<h2>Galeria de arte</h2>
+<p>Como não tem JS, só clicar pra abrir a imagem grandona numa nova aba.</p>
          <div class="image-grid">
             <!-- Example images -->
             <div class="image-item">
@@ -193,9 +167,9 @@ p, li {
             </div>
 </div>
 <h2>Contato e redes sociais</h2>
-<p><img src="https://i.ibb.co/cjQnCdF/telegram.png"></img> <b>Telegram:</b> <a href="https://t.me/euroblito">euroblito</a><br>
-<img src="https://i.ibb.co/Gf6661L9/discord.png"></img> <b>Discord:</b> <a href="https://discord.com/users/888227570577997865"> euroblitz</a><br>
-<img src="https://i.ibb.co/hRnpRPsC/steam.png"></img> <b>Steam:</b> <a href="https://steamcommunity.com/id/euroblito/">Euroblitz</a><br>
+<p><img src="https://i.ibb.co/cjQnCdF/telegram.png"></img> <b>Telegram:</b> <a href="https://t.me/euroblito">euroblito</a>
+<p><img src="https://i.ibb.co/Gf6661L9/discord.png"></img> <b>Discord:</b> <a href="https://discord.com/users/888227570577997865"> euroblitz</a>
+<p><img src="https://i.ibb.co/hRnpRPsC/steam.png"></img> <b>Steam:</b> <a href="https://steamcommunity.com/id/euroblito/">Euroblitz</a>
 
 </main>
 </body>
